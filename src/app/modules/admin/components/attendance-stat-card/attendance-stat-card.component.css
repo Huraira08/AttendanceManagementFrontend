@@ -1,0 +1,39 @@
+.card-container{
+    width: 212px;
+    height: 148px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card-container .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading .title{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.heading .period{
+    font-size: 14px;
+    color: #899BBD;
+}
+
+.number{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+}
+
+.insight{
+    font-size: 14px;
+    color: #6C757D;
+}

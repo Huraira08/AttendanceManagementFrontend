@@ -1,8 +1,30 @@
 <div class="main-container">
-  <header>
+  <header nz-flex nzJustify="space-between">
     <div class="header-content">
       <div class="title">
         {{title}}
+      </div>
+    </div>
+
+    <div class="user-buttons flex-item" nz-flex nzAlign="center">
+      <!-- <app-book-btn></app-book-btn> -->
+      <div >
+        Welcome
+        <a nz-button nzType="primary" nz-dropdown [nzDropdownMenu]="menu">
+          @if(authService.isAdmin()){
+            Admin
+          }
+          @else{
+            User
+          }
+          <span nz-icon nzType="down"></span>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu nzSelectable>
+            <button nz-button nzType="link" class="unselected">my profile</button>
+            <li nz-menu-item><a (click)="logout()">Logout</a></li>
+          </ul>
+        </nz-dropdown-menu>
       </div>
     </div>
   </header>

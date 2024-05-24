@@ -16,6 +16,9 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 
 // ng zorro components
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzFlexModule } from 'ng-zorro-antd/flex';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 registerLocaleData(en);
 
@@ -29,7 +32,10 @@ registerLocaleData(en);
     AppRoutingModule,
     FormsModule,
 
-    NzMenuModule
+    NzMenuModule,
+    NzFlexModule,
+    NzDropDownModule,
+    NzButtonModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },

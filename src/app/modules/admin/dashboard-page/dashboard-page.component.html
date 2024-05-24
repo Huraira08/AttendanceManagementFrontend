@@ -1,1 +1,33 @@
-<div class="container"></div>
+<div class="container">
+    <div class="page-title">Dashboard</div>
+
+    <div class="stat-cards">
+        <admin-attendance-stat-card
+        title="Present"
+        period="today"
+        [number]="145"
+        [percentage]="12"
+        changeStatus="increase"
+        ></admin-attendance-stat-card>
+
+        <admin-attendance-stat-card
+        title="Absent"
+        period="today"
+        [number]="145"
+        [percentage]="12"
+        changeStatus="increase"
+        ></admin-attendance-stat-card>
+
+        <admin-attendance-stat-card
+        title="Attendance"
+        period="This Month"
+        [number]="145"
+        [percentage]="12"
+        changeStatus="increase"
+        ></admin-attendance-stat-card>
+    </div>
+
+    <div class="line-chart">
+        <canvas #attendanceChart></canvas>
+    </div>
+</div>

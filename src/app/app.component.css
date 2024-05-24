@@ -1,0 +1,21 @@
+.main-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    height: 60px;
+    padding: 12px 50px;
+}
+
+.main{
+    display: flex;
+    
+}
+.title{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+

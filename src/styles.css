@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --background-color: #EDF1F7;
+    --foreground-color: white;
+    
+    --primary-text-color: #012970;
+    --secondary-text-color: #4154F1;
+    --tertiary-text-color: #444444;
+    --quaternary-text-color: #7D7D7D;
+
+    --main-button-color: #4154F1
+}
+
+.container{
+    background-color: var(--background-color);
+    min-height: calc(100vh - 60px);
+    max-height: 100%;
+    width: 100%;
+    overflow: auto;
+}
